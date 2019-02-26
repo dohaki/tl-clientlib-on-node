@@ -1,0 +1,18 @@
+{
+  "name": "clientlib-on-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "rm -r ./node_modules/trustlines-clientlib/lib-esm && cp -r ./lib ./node_modules/trustlines-clientlib/lib-esm"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "reconnecting-websocket": "^4.1.10",
+    "trustlines-clientlib": "^0.3.0"
+  }
+}
